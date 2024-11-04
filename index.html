@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>musicpleyer</title>
+  <link rel="stylesheet" href="asset/input.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <nav>
+    <img src="asset/img/logo.jfif" alt="">
+    <ul>
+      <li><i class="bi bi-house-fill"></i>home</li>
+      <li><i class="bi bi-files"></i>brows</li>
+      <li><i class="bi bi-search"></i>search</li>
+      <li><i class="bi bi-calendar3-event-fill"></i>evnts</li>
+      <li><i class="bi bi-music-note-list"></i>playlist</li>
+    </ul>
+  </nav>
+  <div class="horizontal">
+    <i class="bi bi-arrow-left"></i>
+    <i class="bi bi-arrow-right"></i>
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <p>search your music</p>
+    </div>
+    <button>Log in</button>
+  </div>
+
+
+  <div class="flex">
+  
+  <figure class="song-item" data-index="1">
+    <img src="asset/img/1.jpg" alt="">
+    <figcaption>moein</figcaption>
+  </figure>
+
+  <figure class="song-item" data-index="2">
+    <img src="asset/img/darush.jpg" alt="">
+    <figcaption>darush</figcaption>
+  </figure>
+
+  <figure class="song-item" data-index="3">
+    <img src="asset/img/shadmehr-hadis.jpg" alt="">
+    <figcaption>shadmehr</figcaption>
+  </figure>
+
+  <figure class="song-item" data-index="4">
+    <img src="asset/img/Googoosh.jpg" alt="">
+    <figcaption>googoosh</figcaption>
+  </figure>
+
+  <figure class="song-item" data-index="5">
+    <img src="asset/img/Ebi-Delpoosh.jpg" alt="">
+    <figcaption>Ebi-Delpoosh</figcaption>
+  </figure>
+
+  <figure class="song-item" data-index="6">
+    <img src="asset/img/2.jpg" alt="">
+    <figcaption>moein</figcaption>
+  </figure>
+
+  <figure class="song-item" data-index="7">
+    <img src="asset/img/shaye.jfif" alt="">
+    <figcaption>shaye</figcaption>
+  </figure>
+ 
+  <figure class="song-item" data-index="8">
+    <img src="asset/img/hossein.jfif" alt="">
+    <figcaption>hossein</figcaption>
+  </figure>
+
+  <figure class="song-item" data-index="9">
+    <img src="asset/img/Yas-Man-Edameh-Midam.jpg" alt="">
+    <figcaption>yas</figcaption>
+  </figure>
+
+  <figure class="song-item" data-index="10">
+    <img src="asset/img/hamid-sefat-alo-khoda1.jpg" alt="">
+    <figcaption>hamid sefat</figcaption>
+  </figure>
+
+  <figure class="song-item" data-index="11">
+    <img src="asset/img/دانلود-اهنگ-های-مهراد-هیدن.webp" alt="">
+    <figcaption>mehrad hidden</figcaption>
+  </figure>
+
+  
+  <figure class="song-item" data-index="12">
+    <img src="asset/img/bahram.webp" alt="">
+    <figcaption>bahram</figcaption>
+  </figure>
+
+  </div>
+
+
+
+  <div class="tanzimat">
+    <figure class="moshakhasat">
+      <img src="" alt="">
+      <figcaption>
+        <h2 class="artist"></h2>
+        <p class="music"></p>
+      </figcaption>
+    </figure>
+    <audio id="audio" src=""></audio>
+    <div class="clicks">
+      <i id="next" class="bi bi-skip-backward-circle"></i>
+      <i id="play" class="bi bi-play-circle"></i>
+      <i id="pause" class="bi bi-pause-circle"></i>
+      <i id="back" class="bi bi-fast-forward-circle"></i>
+    </div>
+    <div class="progress">
+      <div class="progressbar"></div>
+    </div>
+    <div class="timer">
+      <h3 class="duration"></h3>
+      <span>/</span>
+      <h3 class="curenttime"></h3>
+    </div>
+    <div class="volume-control">
+      <i id="mute" class="bi bi-volume-mute-fill"></i>
+      <i id="turnon" class="bi bi-volume-up-fill"></i>
+
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+    </div>
+
+  </div>
+
+</body>
+<script src="asset/script.js"></script>
+
+</html>
