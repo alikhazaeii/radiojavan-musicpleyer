@@ -238,3 +238,33 @@ turnOn.addEventListener('click', (e) => {
 
 
 allSong(flag)
+
+
+
+//////////////////////////edit/////////////////////////////
+const text = document.querySelector('.edit')
+// console.log(text);
+const strText = text.textContent
+// console.log(strText);
+const splitText = strText.split('');
+// console.log(splitText);
+text.textContent = ''
+setTimeout(() => {
+  for (let s = 0; s < splitText.length; s++) {
+    text.innerHTML += '<h4>' + splitText[s] + '</h4>';
+  }
+
+  let char = 0;
+  let timer = setInterval(onTick, 50);
+
+  function onTick() {
+    const span = text.querySelectorAll('h4')[char];
+    // console.log(span);
+    span.classList.add('fade')
+    char++
+    if (char === splitText.length) {
+      clearInterval(timer)
+      timer = null
+    }
+  }
+}, 1000);
